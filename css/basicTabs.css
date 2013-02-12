@@ -1,0 +1,157 @@
+/*!
+ * jQuery Basic Tabs Styles
+ * Original author: Jon Lunsford - jonathon.lunsford@mindbodyonline.com
+ * Further changes, comments: 
+ */
+.nav-tabs {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+.nav-tabs li {
+  float: left;
+  margin-bottom: -1px;
+  height: 34px;
+  position: relative;
+}
+.nav-tabs li.active a {
+  color: #08C;
+  border: 1px solid #ddd;
+  border-bottom-color: #fff;
+  cursor: default;
+}
+.nav-tabs li.active a:hover {
+  background: #fff;
+  border-bottom-color: #fff;
+}
+.nav-tabs li a {
+  color: #555;
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  margin-right: 2px;
+  font-size: 13px;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tabs li a:hover {
+  background: #f0f0f0;
+  border-bottom-color: #ddd;
+}
+.nav-tabs li .arrow {
+  cursor: pointer;
+}
+.nav-tabs .tab-actions {
+  float: right;
+  display: none;
+}
+.nav-tabs .tab-actions .edit {
+  margin-right: 14px;
+}
+/* vertically aligned tabs */
+.tabbable.tabs-left .nav-tabs {
+  width: 150px;
+  border-bottom: none;
+  border-right: 1px solid #ddd;
+}
+.tabbable.tabs-left .nav-tabs li {
+  width: 101%;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.tabbable.tabs-left .nav-tabs li:last-child {
+  margin-bottom: 0;
+}
+.tabbable.tabs-left .nav-tabs li a {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  padding: 9px 12px 6px 12px;
+  background: #f0f0f0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right-color: #ddd;
+}
+.tabbable.tabs-left .nav-tabs li a:hover {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-right-color: #ddd;
+  background: #e7e7e7;
+}
+.tabbable.tabs-left .nav-tabs li.active a {
+  border-right-color: #fff;
+  border-bottom-color: #ddd;
+  background: #fff;
+}
+.tabbable.tabs-left .nav-tabs li.active a:hover {
+  border-bottom-color: #ddd;
+}
+.tabbable.tabs-left .tab-content {
+  float: left;
+  width: 83.9%;
+}
+.tabbable.tabs-left .tab-pane {
+  margin-left: -1px;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  min-height: 130px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tabbable.tabs-left .badge-important {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 13px;
+  width: 19px;
+  top: -4px;
+  left: -6px;
+  font-style: normal;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid #FFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Tab panes / content */
+.tab-pane {
+  display: none;
+  /* forms within tab panes */
+
+  /* Action list */
+
+}
+.tab-pane p.muted {
+  margin-bottom: 20px;
+}
+.tab-pane label {
+  width: 170px;
+}
+.tab-pane .buttonBox {
+  padding-bottom: 0px;
+}
+.tab-pane .action-list li {
+  border-bottom: 1px solid #F0F0F0;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.tab-pane .action-list li:last-child {
+  border-bottom: none;
+}
+.tab-pane .action-list li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}

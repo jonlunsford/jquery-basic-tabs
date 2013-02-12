@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.main-wrap {
+  width: 940px;
+  margin: 40px auto;
+}

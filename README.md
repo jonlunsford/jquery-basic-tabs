@@ -1,13 +1,13 @@
 # Jquery Basic Tabs
 
-Jquery Basic Tabs is a lightweight plugin that leaves the styling up to you. Basic tabs, that's it.
+Jquery Basic Tabs is a lightweight plugin that leaves the styling up to you. Basic Tabs, that's it.
 
 ### Installation
 ---
 
 #### Write some basic markup
 
-Basic tabs works with a unordered list with an equal number of divs to house your tab content, like this:
+Basic Tabs works with an unordered list with an equal number of divs to house your tab content, like this:
 
 ```html
 
@@ -36,7 +36,6 @@ Basic tabs works with a unordered list with an equal number of divs to house you
     </div>    
   </div>
 </div>
-
 ```
 
 If you're not a fan of the classes above, no problem, you can name them anything you want when the plugin is instantiated, more on that later.
@@ -63,7 +62,6 @@ $('.vertical-tabs').basicTabs({
   tabsContentSelector: '.tab-pane',             
   verticalTabs: false                           
 });
-
 ```
 
 Basic Tabs also supports vertical tabs, simpley pass in ```verticalTabs: true```, like this:
@@ -73,17 +71,23 @@ Basic Tabs also supports vertical tabs, simpley pass in ```verticalTabs: true```
 $('.vertical-tabs').basicTabs({           
   verticalTabs: true                           
 });
-
 ```
 
 #### Available options
 
 Basic Tabs purposly has very few opitons, afterall it's just *basic*. If you would like different classes than the provided, just pass them is as the following options.
 
-| Option                      | Value                                                                                                              |
-|:----------------------------|:-------------------------------------------------------------------------------------------------------------------|
-| ```customActiveClass```     | *string* Default: "active", class the active tab will be given.                                                    |
-| ```tabsParentSelector```    | *string* Default: ".nav-tavs", selector that matches the tabs parent (should be a ```<ul></ul>```)                 |
-| ```tabSelector```           | Default: *string* ".nav-tabs li", selector or class that matches the tabs themselves (should be a ```<li></li>```) |
-| ```tabsContentSelector```   | *string* Default: ".tab-pane", selector or class that matches the parent of each tab's content                     |
-| ```verticalTabs```          | *Bool* Default: false, boolean to determin if tabs should be rendered vertically or not                            | 
+| Option                | Value                                                                                                              |
+|:----------------------|:-------------------------------------------------------------------------------------------------------------------|
+| customActiveClass     | *string* Default: "active", class the active tab will be given.                                                    |
+| tabsParentSelector    | *string* Default: ".nav-tavs", selector that matches the tabs parent (should be a ```<ul></ul>```)                 |
+| tabSelector           | *string* Default: ".nav-tabs li", selector or class that matches the tabs themselves (should be a ```<li></li>```) |
+| tabsContentSelector   | *string* Default: ".tab-pane", selector or class that matches the parent of each tab's content                     |
+| verticalTabs          | *Bool* Default: false, boolean to determin if tabs should be rendered vertically or not                            | 
+
+### Roadmap
+---
+
+- [ ] Add links to demos / examples in documentation.
+- [ ] Add support for basic dropdown menus in tabs.
+- [x] Have a beer.

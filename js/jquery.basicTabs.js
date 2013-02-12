@@ -9,7 +9,7 @@
       defaults = {
         customActiveClass: 'active',                  // Class that is given to a tab when it's active
         tabsParentSelector: '.nav-tabs',              // Class / selector of parent ul wrapping tab list items 
-        tabSelector: '.tab',                          // Class / selector of tab li items
+        tabSelector: '.nav-tabs li',                          // Class / selector of tab li items
         tabsContentSelector: '.tab-pane',             // Class / selector of tab content
         verticalTabs: false                           // Boolean if tabs should render vertically
       };

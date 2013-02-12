@@ -50,7 +50,6 @@
     },
 
     // If verticalTabs is true add the "tabs-left" class to this.element.
-    // Necessarry styles are added from Styles/plugins/basicTabs.less
     checkVerticalAllign: function() {
       if(this.options.verticalTabs) {
         this.element.addClass("tabs-left");

@@ -2,29 +2,34 @@
 ** jQuery Basic Tabs
 ** @author Jon Lunsford || jon@capturethecastle.net
 */
-.basic-tabs {
+.basic-tabs * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.basic-tabs > ul {
   float: left;
   width: 100%;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
 }
-.basic-tabs li {
+.basic-tabs > ul li {
   float: left;
   margin-bottom: -1px;
   height: 34px;
   position: relative;
 }
-.basic-tabs li.active a {
+.basic-tabs > ul li.active a {
   color: #08C;
   border: 1px solid #ddd;
   border-bottom-color: #fff;
   cursor: default;
 }
-.basic-tabs li.active a:hover {
+.basic-tabs > ul li.active a:hover {
   background: #fff;
   border-bottom-color: #fff;
 }
-.basic-tabs li a {
+.basic-tabs > ul li a {
   color: #555;
   display: inline-block;
   padding: 6px 12px;
@@ -36,25 +41,32 @@
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-.basic-tabs li a:hover {
+.basic-tabs > ul li a:hover {
   background: #f0f0f0;
   border-bottom-color: #ddd;
 }
+.basic-tabs > ul + div {
+  clear: both;
+}
+.basic-tabs > ul + div > div {
+  display: none;
+  padding: 15px;
+}
 /* vertically aligned tabs */
-.tabbable.tabs-left .nav-tabs {
+.basic-tabs.tabs-left > ul {
   width: 150px;
   border-bottom: none;
   border-right: 1px solid #ddd;
 }
-.tabbable.tabs-left .nav-tabs li {
+.basic-tabs.tabs-left > ul li {
   width: 101%;
   height: 40px;
   margin-bottom: 5px;
 }
-.tabbable.tabs-left .nav-tabs li:last-child {
+.basic-tabs.tabs-left > ul li:last-child {
   margin-bottom: 0;
 }
-.tabbable.tabs-left .nav-tabs li a {
+.basic-tabs.tabs-left > ul li a {
   width: 100%;
   height: 100%;
   border-radius: 4px 0 0 4px;
@@ -66,81 +78,28 @@
   box-sizing: border-box;
   border-right-color: #ddd;
 }
-.tabbable.tabs-left .nav-tabs li a:hover {
+.basic-tabs.tabs-left > ul li a:hover {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-right-color: #ddd;
   background: #e7e7e7;
 }
-.tabbable.tabs-left .nav-tabs li.active a {
+.basic-tabs.tabs-left > ul li.active a {
   border-right-color: #fff;
   border-bottom-color: #ddd;
   background: #fff;
 }
-.tabbable.tabs-left .nav-tabs li.active a:hover {
+.basic-tabs.tabs-left > ul li.active a:hover {
   border-bottom-color: #ddd;
 }
-.tabbable.tabs-left .tab-content {
+.basic-tabs.tabs-left > ul + div {
   float: left;
   width: 83.9%;
+  clear: right;
 }
-.tabbable.tabs-left .tab-pane {
+.basic-tabs.tabs-left > ul + div > div {
   margin-left: -1px;
   border: 1px solid #ddd;
   padding: 10px 20px;
-  min-height: 130px;
+  min-height: 200px;
   background: #fff;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.tabbable.tabs-left .badge-important {
-  cursor: pointer;
-  position: absolute;
-  border-radius: 13px;
-  width: 19px;
-  top: -4px;
-  left: -6px;
-  font-style: normal;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-  border: 1px solid #FFF;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* Tab panes / content */
-.tab-pane {
-  display: none;
-  /* forms within tab panes */
-
-  /* Action list */
-
-}
-.tab-pane p.muted {
-  margin-bottom: 20px;
-}
-.tab-pane label {
-  width: 170px;
-}
-.tab-pane .buttonBox {
-  padding-bottom: 0px;
-}
-.tab-pane .action-list li {
-  border-bottom: 1px solid #F0F0F0;
-  margin-top: 10px;
-  padding-bottom: 10px;
-}
-.tab-pane .action-list li:last-child {
-  border-bottom: none;
-}
-.tab-pane .action-list li a {
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin-bottom: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 }

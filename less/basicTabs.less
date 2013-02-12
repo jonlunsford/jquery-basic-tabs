@@ -4,47 +4,65 @@
 */
 
 .basic-tabs {
-  float: left;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
 
-  li {
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  > ul {
     float: left;
-    margin-bottom: -1px;
-    height: 34px;
-    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
 
-    &.active {
+    li {
+      float: left;
+      margin-bottom: -1px;
+      height: 34px;
+      position: relative;
+
+      &.active {
+
+        a {
+          color: #08C;
+          border: 1px solid #ddd;
+          border-bottom-color: #fff;
+          cursor: default;
+
+          &:hover {
+            background: #fff;
+            border-bottom-color: #fff;
+          }
+        }
+      }
 
       a {
-        color: #08C;
-        border: 1px solid #ddd;
-        border-bottom-color: #fff;
-        cursor: default;
+        color: #555;
+        display: inline-block;
+        padding: 6px 12px;
+        line-height: 20px;
+        border: 1px solid transparent;
+        margin-right: 2px;
+        font-size: 13px;
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
 
         &:hover {
-          background: #fff;
-          border-bottom-color: #fff;
+          background: #f0f0f0;
+          border-bottom-color: #ddd;
         }
       }
     }
 
-    a {
-      color: #555;
-      display: inline-block;
-      padding: 6px 12px;
-      line-height: 20px;
-      border: 1px solid transparent;
-      margin-right: 2px;
-      font-size: 13px;
-      -webkit-border-radius: 4px 4px 0 0;
-      -moz-border-radius: 4px 4px 0 0;
-      border-radius: 4px 4px 0 0;
+    + div {
+      clear: both;
 
-      &:hover {
-        background: #f0f0f0;
-        border-bottom-color: #ddd;
+      > div {
+        display: none;
+        padding: 15px;
       }
     }
   }
@@ -52,11 +70,11 @@
 
 /* vertically aligned tabs */
 
-.tabbable {
+.basic-tabs {
 
   &.tabs-left {
     
-    .nav-tabs {
+   > ul {
       width: 150px;
       border-bottom: none;
       border-right: 1px solid #ddd;
@@ -99,87 +117,20 @@
           }
         }
       }
-    }
 
-    .tab-content {
-      float: left;
-      width: 83.9%;
-    }
+      + div {
+        float: left;
+        width: 83.9%;
+        clear: right;
 
-    .tab-pane {
-      margin-left: -1px;
-      border: 1px solid #ddd;
-      padding: 10px 20px;
-      min-height: 130px;
-      background: #fff;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-
-    .badge-important {
-      cursor: pointer;
-      position: absolute;
-      border-radius: 13px;
-      width: 19px;
-      top: -4px;
-      left: -6px;
-      font-style: normal;
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-      border: 1px solid #FFF;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      box-sizing: border-box;
+        > div {
+          margin-left: -1px;
+          border: 1px solid #ddd;
+          padding: 10px 20px;
+          min-height: 200px;
+          background: #fff;
+        }
+      }
     }
   } // end tabs-left
-}
-
-/* Tab panes / content */
-
-.tab-pane {
-  display: none;
-
-  p.muted {
-    margin-bottom: 20px;
-  }
-
-  /* forms within tab panes */
-
-  label {
-    width: 170px;
-  }
-
-  .buttonBox {
-    padding-bottom: 0px;
-  }
-
-  /* Action list */
-
-  .action-list {
-
-    li {
-      border-bottom: 1px solid #F0F0F0;
-      margin-top: 10px;
-      padding-bottom: 10px;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      a {
-        width: 100%;
-        height: 100%;
-        display: block;
-        box-sizing: border-box;
-        margin-bottom: 0;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-    }
-  }
-}
-
+} // end basic-tabs

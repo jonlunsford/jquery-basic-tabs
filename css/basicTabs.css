@@ -1,31 +1,30 @@
-/*!
- * jQuery Basic Tabs Styles
- * Original author: Jon Lunsford - jonathon.lunsford@mindbodyonline.com
- * Further changes, comments: 
- */
-.nav-tabs {
+/*
+** jQuery Basic Tabs
+** @author Jon Lunsford || jon@capturethecastle.net
+*/
+.basic-tabs {
   float: left;
   width: 100%;
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
 }
-.nav-tabs li {
+.basic-tabs li {
   float: left;
   margin-bottom: -1px;
   height: 34px;
   position: relative;
 }
-.nav-tabs li.active a {
+.basic-tabs li.active a {
   color: #08C;
   border: 1px solid #ddd;
   border-bottom-color: #fff;
   cursor: default;
 }
-.nav-tabs li.active a:hover {
+.basic-tabs li.active a:hover {
   background: #fff;
   border-bottom-color: #fff;
 }
-.nav-tabs li a {
+.basic-tabs li a {
   color: #555;
   display: inline-block;
   padding: 6px 12px;
@@ -37,19 +36,9 @@
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-.nav-tabs li a:hover {
+.basic-tabs li a:hover {
   background: #f0f0f0;
   border-bottom-color: #ddd;
-}
-.nav-tabs li .arrow {
-  cursor: pointer;
-}
-.nav-tabs .tab-actions {
-  float: right;
-  display: none;
-}
-.nav-tabs .tab-actions .edit {
-  margin-right: 14px;
 }
 /* vertically aligned tabs */
 .tabbable.tabs-left .nav-tabs {

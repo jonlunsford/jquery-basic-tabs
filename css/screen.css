@@ -10,3 +10,11 @@ a {
   width: 940px;
   margin: 40px auto;
 }
+.horizontal-tabs .tab-content {
+  border: 1px solid #DDD;
+  border-top-color: rgba(0, 0, 0, 0);
+  min-height: 200px;
+}
+.basic-tabs {
+  margin-bottom: 40px;
+}

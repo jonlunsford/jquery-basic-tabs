@@ -7,7 +7,7 @@ Jquery Basic Tabs is a lightweight plugin that leaves the styling up to you. Bas
 
 #### Write some basic markup
 
-Basic Tabs works with an unordered list with an equal number of divs to house your tab content, like this:
+Basic Tabs works with an unordered list and an equal number of divs to house your tab content, like this:
 
 ```html
 
@@ -38,7 +38,7 @@ Basic Tabs works with an unordered list with an equal number of divs to house yo
 </div>
 ```
 
-If you're not a fan of the classes above, no problem, you can name them anything you want when the plugin is instantiated, more on that later.
+If you're not a fan of the classes above, no problem, you can name them anything you want and tell Basic Tabs to use those when the plugin is instantiated, more on that later.
 
 #### Include the neccessary files
 
@@ -64,7 +64,7 @@ $('.vertical-tabs').basicTabs({
 });
 ```
 
-Basic Tabs also supports vertical tabs, simpley pass in ```verticalTabs: true```, like this:
+Basic Tabs also supports vertical tabs, simply pass in ```verticalTabs: true```, like this:
 
 ```JavaScript
   
@@ -80,7 +80,7 @@ Basic Tabs purposly has very few opitons, afterall it's just *basic*. If you wou
 | Option                | Value                                                                                                              |
 |:----------------------|:-------------------------------------------------------------------------------------------------------------------|
 | customActiveClass     | *string* Default: "active", class the active tab will be given.                                                    |
-| tabsParentSelector    | *string* Default: ".nav-tavs", selector that matches the tabs parent (should be a ```<ul></ul>```)                 |
+| tabsParentSelector    | *string* Default: ".nav-tabs", selector that matches the tabs parent (should be a ```<ul></ul>```)                 |
 | tabSelector           | *string* Default: ".nav-tabs li", selector or class that matches the tabs themselves (should be a ```<li></li>```) |
 | tabsContentSelector   | *string* Default: ".tab-pane", selector or class that matches the parent of each tab's content                     |
 | verticalTabs          | *Bool* Default: false, boolean to determin if tabs should be rendered vertically or not                            | 

@@ -88,6 +88,7 @@ Basic Tabs purposly has very few opitons, afterall it's just *basic*. If you wou
 ### Roadmap
 ---
 
+- [ ] Add Tests.
 - [ ] Add links to demos / examples in documentation.
 - [ ] Add support for basic dropdown menus in tabs.
 - [x] Have a beer.

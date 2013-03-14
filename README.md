@@ -83,6 +83,7 @@ Basic Tabs purposly has very few opitons, afterall it's just *basic*. If you wou
 | tabsParentSelector    | *string* Default: ".nav-tabs", selector that matches the tabs parent (should be a ```<ul></ul>```)                 |
 | tabSelector           | *string* Default: ".nav-tabs li", selector or class that matches the tabs themselves (should be a ```<li></li>```) |
 | tabsContentSelector   | *string* Default: ".tab-pane", selector or class that matches the parent of each tab's content                     |
+| defaultTab            | *Integer* Default: 0, zero based index for the default tab to show                                                 | 
 | verticalTabs          | *Bool* Default: false, boolean to determin if tabs should be rendered vertically or not                            | 
 
 ### Roadmap

@@ -11,7 +11,7 @@
         tabsParentSelector: '.nav-tabs',              // Class / selector of parent ul wrapping tab list items 
         tabSelector: '.nav-tabs li',                  // Class / selector of tab li items
         tabsContentSelector: '.tab-pane',             // Class / selector of tab content
-        defaultTab: 0,                                // Default tab to be show, based on a zero index
+        defaultTab: 0,                                // Default tab to show, based on a zero index
         verticalTabs: false                           // Boolean if tabs should render vertically
       };
 

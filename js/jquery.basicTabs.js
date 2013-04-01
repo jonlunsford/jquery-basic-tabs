@@ -9,9 +9,10 @@
       defaults = {
         customActiveClass: 'active',                  // Class that is given to a tab when it's active
         tabsParentSelector: '.nav-tabs',              // Class / selector of parent ul wrapping tab list items 
-        tabSelector: '.nav-tabs li',                          // Class / selector of tab li items
+        tabSelector: '.nav-tabs li',                  // Class / selector of tab li items
         tabsContentSelector: '.tab-pane',             // Class / selector of tab content
-        verticalTabs: false                           // Boolean if tabs should render vertically
+        verticalTabs: false,                          // Boolean if tabs should render vertically
+        defaultTab: 0 
       };
 
   function Plugin(element, options) {
@@ -25,7 +26,7 @@
   Plugin.prototype = {
 
     init: function() {
-      this.showTab(0);                                // Initially show the first tab
+      this.showTab(this.options.defaultTab);          // Initially show the first tab
       this.checkVerticalAllign();                     // If verticalTabs is true add "tabs-left" class to tabbable element
       this.attachNavHandlers();                       // Attach click handlers to tabs but NOT any links in a dropdown menu
       this.element.addClass("basic-tabs");
@@ -43,7 +44,8 @@
       var _this = this,
           $tabLinks = this.findElement(this.options.tabsParentSelector).children(this.options.tabSelector).find('a');
       
-      $tabLinks.click(function() {
+      $tabLinks.click(function(e) {
+        e.preventDefault();
         $(this).parents(_this.options.tabsParentSelector).children('.' + _this.options.customActiveClass).removeClass(_this.options.customActiveClass);
         _this.showTab($(this).parents(_this.options.tabSelector).index());
       });

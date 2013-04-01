@@ -1,0 +1,7 @@
+{
+"framework": "jasmine",
+"src_files": [ 
+	"jquery.basicTabs.js",
+	"jquery.basicTabs_spec.js"
+	]
+}

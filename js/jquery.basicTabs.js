@@ -11,8 +11,8 @@
         tabsParentSelector: '.nav-tabs',              // Class / selector of parent ul wrapping tab list items 
         tabSelector: '.nav-tabs li',                  // Class / selector of tab li items
         tabsContentSelector: '.tab-pane',             // Class / selector of tab content
-        verticalTabs: false,                          // Boolean if tabs should render vertically
-        defaultTab: 0 
+        defaultTab: 0,                                // Default tab to show, based on a zero index
+        verticalTabs: false                           // Boolean if tabs should render vertically
       };
 
   function Plugin(element, options) {
@@ -32,7 +32,7 @@
       this.element.addClass("basic-tabs");
     },
 
-    // Show tab bases on index (0 based) passed in
+    // Show tab based on index (0 based) passed in
     showTab: function(index) {
       $(this.findElement(this.options.tabsContentSelector)).hide();
       $(this.findElement(this.options.tabsContentSelector)[index]).show();
